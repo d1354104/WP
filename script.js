@@ -34,11 +34,11 @@ function underlineMenu(link) {
     if (link === firstItem) {
         var secondItem = document.querySelector("nav ul li:nth-child(4) a");
         link.style.borderBottom = "none";
-        secondItem.style.borderBottom = "2px solid orange"; // 원하는 색상으로 변경하세요
+        secondItem.style.borderBottom = "2px solid orange";
     }
 }
 window.addEventListener("DOMContentLoaded", function () {
-    var initialPage = "about"; // 처음에 보여줄 페이지의 id를 지정하세요
+    var initialPage = "about";
     var initialLink = document.querySelector("nav ul li a[data-page='" + initialPage + "']");
     showPage(initialPage);
     underlineMenu(initialLink);
